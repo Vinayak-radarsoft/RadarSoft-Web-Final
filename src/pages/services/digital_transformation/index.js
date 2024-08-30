@@ -1,15 +1,15 @@
 import React from "react";
-import digital from "../../../../public/assets/img/digital/digital.png";
-import mobileapp from "../../../../public/assets/img/digital/mobileapp.png";
-import settings from "../../../../public/assets/img/digital/settings.png";
-import uiux from "../../../../public/assets/img/digital/uiux.png";
-import agile from "../../../../public/assets/img/digital/agile.png";
-import AI from "../../../../public/assets/img/digital/AI.png";
-import micro from "../../../../public/assets/img/digital/micro.png";
-import webdevelopment from "../../../../public/assets/img/digital/webdevelopment.png";
-import common_contact from "../../../../public/assets/img/common/common-contact.png";
-import digitaltransformation1 from "../../../../public/assets/img/digital/digital transformation1.png";
-import digitaltransformation2 from "../../../../public/assets/img/digital/digital transformation2.png";
+import digital from "../../../../public/assets/media/digital/digital.png";
+import mobileapp from "../../../../public/assets/media/digital/mobileapp.png";
+import settings from "../../../../public/assets/media/digital/settings.png";
+import uiux from "../../../../public/assets/media/digital/uiux.png";
+import agile from "../../../../public/assets/media/digital/agile.png";
+import AI from "../../../../public/assets/media/digital/AI.png";
+import micro from "../../../../public/assets/media/digital/micro.png";
+import webdevelopment from "../../../../public/assets/media/digital/webdevelopment.png";
+import common_contact from "../../../../public/assets/media/common/common-contact.png";
+import digitaltransformation1 from "../../../../public/assets/media/digital/digital transformation1.png";
+import digitaltransformation2 from "../../../../public/assets/media/digital/digital transformation2.png";
 import Link from "next/link";
 
 const Digital = () => {
@@ -240,11 +240,12 @@ const Digital = () => {
                 <div className="container mb-5">
                     <div className="row">
                         <div className="mb-5">
-                            <Link className="digital-case-studies" href="/case_Study" style={{ textDecoration: "none", color: "black" }}>
+                            <Link className="digital-case-studies" href="/casestudy"
+                            >
                                 Case Studies
                             </Link>
                             &nbsp;
-                            <Link href="/services/digital_transformation" style={{ textDecoration: "none", color: "black" }}>
+                            <Link href="/services/digital_transformation" >
                                 <i className="fa-solid fa-chevron-right"></i>&nbsp; Digital
                                 Transformation
                             </Link>
@@ -261,7 +262,7 @@ const Digital = () => {
                             </div>
                             <div className="col-12 col-sm-12 col-md-6 col-lg-5 digital-main-set">
                                 <div className="">
-                                    <Link className="common-project-button" href="/contact" style={{ textDecoration: "none" }}>
+                                    <Link className="common-project-button" href="/contact">
                                         Start a project with us
                                     </Link>
                                 </div>

@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  optimizeFonts: true
+  optimizeFonts: false
 };
 
 export default nextConfig;

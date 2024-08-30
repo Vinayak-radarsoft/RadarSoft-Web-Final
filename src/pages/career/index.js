@@ -1,5 +1,5 @@
 import Image from "next/image";
-import careerBanner from "../../../public/assets/img/career-banner.png";
+import careerBanner from "../../../public/assets/media/career-banner.png";
 import { openJobModal } from "@/components/common/data";
 import Job from "@/components/model/Job";
 

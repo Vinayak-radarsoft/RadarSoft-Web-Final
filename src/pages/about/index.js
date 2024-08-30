@@ -1,18 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
-import aboutImg from "../../../public/assets/img/about-bannner.png";
-import office from "../../../public/assets/img/office-image.png";
-import dedication from "../../../public/assets/img/dedication.png";
-import code from "../../../public/assets//img/code-management.png";
-import skills from "../../../public/assets/img/skills.png";
-import database from "../../../public/assets/img/database.png";
+import aboutImg from "../../../public/assets/media/about-bannner.png";
+import office from "../../../public/assets/media/office-image.png";
+import dedication from "../../../public/assets/media/dedication.png";
+import code from "../../../public/assets/media/code-management.png";
+import skills from "../../../public/assets/media/skills.png";
+import database from "../../../public/assets/media/database.png";
 import lindIn from "../../../public/assets/logo/lindIn.png";
-import team1 from "../../../public/assets/img/team-1.png";
+import team1 from "../../../public/assets/media/team-1.png";
 import listIcon from "../../../public/assets/logo/list-icon.png";
-import core1 from "../../../public/assets/img/core1.png";
-import core2 from "../../../public/assets/img/core2.png";
-import CEO from "../../../public/assets/img/CEO.png";
-import mobileBanner from "../../../public/assets/img/about-mobile-banner.png";
+import core1 from "../../../public/assets/media/core1.png";
+import core2 from "../../../public/assets/media/core2.png";
+import CEO from "../../../public/assets/media/CEO.png";
+import mobileBanner from "../../../public/assets/media/about-mobile-banner.png";
 
 const About = () => {
     return (
