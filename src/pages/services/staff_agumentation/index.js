@@ -23,6 +23,7 @@ import acess from "../../../../public/assets/media/staff/acess.png";
 import resource from "../../../../public/assets/media/staff/resource.png";
 import talent from "../../../../public/assets/media/staff/talent.png";
 import initial from "../../../../public/assets/media/staff/initial.png";
+import Arrow from "../../../../public/assets/media/staff/Arrow.png";
 import Link from "next/link";
 
 const Staff = () => {
@@ -46,7 +47,7 @@ const Staff = () => {
                   without the long-term commitments associated with full-time
                   employment.
                 </p>
-                <div className="">
+                <div className="top-space">
                   <a className="common-project-button" href="">
                     Get in touch
                   </a>
@@ -80,9 +81,9 @@ const Staff = () => {
       <section className="service-contact">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 service-set-box">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div>
-                <div className="digital-stay commom-heading">
+                <div className="staff-stay">
                   <h2>
                     Why Do You Need <br />
                     Staff Augmentation
@@ -92,7 +93,7 @@ const Staff = () => {
                     your competitors. Enhance efficiency, innovate faster, and
                     adapt to market changes seamlessly.
                   </p>
-                  <div className="service-d-stay">
+                  <div className="staff-d-stay">
                     <ul>
                       <li>
                         Quickly onboard professionals with diverse, exact skills
@@ -144,28 +145,28 @@ const Staff = () => {
                 drive successful outcomes.
               </p>
             </div>
-            <div class="process-container">
-              <div class="staff-process-step research">
+            <div class="staff-process-container">
+              <div class="staff-process-step rightarrow research">
                 <img src={acess.src} alt="Research Icon" />
                 <p>Access to Specialsed Talent</p>
               </div>
               <div class="process-arrow">&#8594;</div>
-              <div class="staff-process-step design">
+              <div class="staff-process-step rightarrow design">
                 <img src={resource.src} alt="Design Icon" />
                 <p>Resource Selection</p>
               </div>
               <div class="process-arrow">&#8594;</div>
-              <div class="staff-process-step development">
+              <div class="staff-process-step rightarrow development">
                 <img src={talent.src} alt="Development Icon" />
                 <p>Talent Onboarding</p>
               </div>
               <div class="process-arrow">&#8594;</div>
-              <div class="staff-process-step testing">
+              <div class="staff-process-step rightarrow testing">
                 <img src={initial.src} alt="Testing Icon" />
                 <p>Ongoing Support and Management</p>
               </div>
             </div>
-            <div className="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-3 g-lg-4">
+            <div className="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-3 g-lg-5">
               <div class="col">
                 <div className="service-d-stay">
                   <ul>
@@ -173,8 +174,23 @@ const Staff = () => {
                       <h6>
                         <strong>Access to Specialized Talent</strong>
                       </h6>
-                      We identify your project requirements and match you with
-                      the right experts.
+                      <p>
+                        We identify your project requirements and match you with
+                        the right experts.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="service-d-stay">
+                  <ul>
+                    <li>
+                      <h6>
+                        <strong>Resource Selection</strong>
+                      </h6>
+                      <p>
+                        Our rigorous vetting ensures we find the best candidates
+                        for your needs.
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -186,34 +202,23 @@ const Staff = () => {
                       <h6>
                         <strong>Talent Onboarding</strong>
                       </h6>
-                      We facilitate a smooth integration process for new team
-                      members.
+                      <p>
+                        We facilitate a smooth integration process for new team
+                        members.
+                      </p>
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="col">
-                <div className="service-d-stay">
-                  <ul>
-                    <li>
-                      <h6>
-                        <strong>Resource Selection</strong>
-                      </h6>
-                      Our rigorous vetting ensures we find the best candidates
-                      for your needs.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col">
                 <div className="service-d-stay">
                   <ul>
                     <li>
                       <h6>
                         <strong>Ongoing Support and Management</strong>
                       </h6>
-                      We offer continuous support and evaluations to keep your
-                      project on track.
+                      <p>
+                        We offer continuous support and evaluations to keep your
+                        project on track.
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -225,12 +230,12 @@ const Staff = () => {
       {/* END OUR PROCESS */}
 
       {/* START OUR EXPERTISE*/}
-      <section className="service-contact">
+      <section className="our-contact">
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 service-set-box">
               <div>
-                <div className="digital-stay commom-heading">
+                <div className="staff-stay">
                   <h2>Our Expertise</h2>
                   <p>
                     We specialize in providing top-notch professionals across
@@ -238,7 +243,7 @@ const Staff = () => {
                     development, UI/UX design, digital marketing, and quality
                     assurance.
                   </p>
-                  <div className="service-d-stay">
+                  <div className="staff-d-stay">
                     <ul>
                       <li>
                         <h6>
@@ -289,7 +294,7 @@ const Staff = () => {
       {/* END OUR EXPERTISE */}
 
       {/* START SERVICE */}
-      <section className="service-d-following">
+      <section className="staff-following">
         <div className="container">
           <div className="row">
             <div className="service-d-following-head commom-heading">
