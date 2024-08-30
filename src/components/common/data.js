@@ -28,7 +28,7 @@ export const closeJobModal = () => {
     }
 };
 
-//service redirecct code here.
+//service redirect
 export const handleServices = (router, num) => {
     switch (num) {
         case 1:
