@@ -30,8 +30,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { openApplyModal } from "@/components/common/data";
 import Apply from "@/components/model/Apply";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const [activeAccordion, setActiveAccordion] = useState(1);
   const [backgroundClass, setBackgroundClass] = useState("unique-area-1");
 
@@ -57,6 +59,10 @@ export default function Home() {
 
   const handleApplyModel = () => {
     openApplyModal();
+  };
+
+  const handleServiceRoute = () => {
+    return router.push("/services");
   };
 
   return (
@@ -142,8 +148,9 @@ export default function Home() {
             <div className="row">
               <div className="unique-area-label">
                 <h1
-                  className={`unique-area-heading col-lg-8 col-12 m-0 ${activeAccordion === 3 && "text-style"
-                    }`}
+                  className={`unique-area-heading col-lg-8 col-12 m-0 ${
+                    activeAccordion === 3 && "text-style"
+                  }`}
                 >
                   Discover how we work at
                   <br />
@@ -151,10 +158,12 @@ export default function Home() {
                 </h1>
                 <div className="col-lg-4 mt-lg-0 mt-4 col-12">
                   <button
-                    className={`${activeAccordion === 3 || activeAccordion === 4
-                      ? "btn-style"
-                      : "unique-area-button"
-                      }`}
+                    className={`${
+                      activeAccordion === 3 || activeAccordion === 4
+                        ? "btn-style"
+                        : "unique-area-button"
+                    }`}
+                    onClick={handleServiceRoute}
                   >
                     Discover how we work
                   </button>
@@ -209,8 +218,9 @@ export default function Home() {
                   >
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${activeAccordion === 3 && "border-style"
-                          }`}
+                        className={`accordion-header ${
+                          activeAccordion === 3 && "border-style"
+                        }`}
                         id="headingOne"
                       >
                         <button
@@ -218,11 +228,13 @@ export default function Home() {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne"
                           aria-controls="collapseOne"
-                          className={`accordion-button ${activeAccordion === 3 && "text-style"
-                            } ${activeAccordion === 1
+                          className={`accordion-button ${
+                            activeAccordion === 3 && "text-style"
+                          } ${
+                            activeAccordion === 1
                               ? "text-font-style"
                               : "collapsed"
-                            }`}
+                          }`}
                           onClick={() => handleAccordionClick(1)}
                           aria-expanded={activeAccordion === 1}
                         >
@@ -230,16 +242,18 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${activeAccordion === 1 ? "show" : ""
-                          }`}
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 1 ? "show" : ""
+                        }`}
                         id="collapseOne"
                         // class="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${activeAccordion === 3 && "text-style"
-                            }`}
+                          className={`accordion-body ${
+                            activeAccordion === 3 && "text-style"
+                          }`}
                         >
                           Our Rapid Design phase focuses on quickly translating
                           your vision into real world designs. We create
@@ -250,16 +264,18 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${activeAccordion === 3 && "border-style"
-                          }`}
+                        className={`accordion-header ${
+                          activeAccordion === 3 && "border-style"
+                        }`}
                         id="headingTwo"
                       >
                         <button
                           className={`accordion-button 
                             ${activeAccordion === 3 && "text-style"}
-                            ${activeAccordion === 2
-                              ? "text-font-style"
-                              : "collapsed"
+                            ${
+                              activeAccordion === 2
+                                ? "text-font-style"
+                                : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(2)}
@@ -272,15 +288,17 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${activeAccordion === 2 ? "show" : ""
-                          }`}
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 2 ? "show" : ""
+                        }`}
                         id="collapseTwo"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${activeAccordion === 3 && "text-style"
-                            }`}
+                          className={`accordion-body ${
+                            activeAccordion === 3 && "text-style"
+                          }`}
                         >
                           In our Rapid Development stage, we leverage agile
                           methodologies and advanced technologies to smoothly
@@ -290,16 +308,18 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${activeAccordion === 3 && "border-style"
-                          }`}
+                        className={`accordion-header ${
+                          activeAccordion === 3 && "border-style"
+                        }`}
                         id="headingThree"
                       >
                         <button
                           className={`accordion-button 
                                 ${activeAccordion === 3 && "text-style"}
-                            ${activeAccordion === 3
-                              ? "text-font-style"
-                              : "collapsed"
+                            ${
+                              activeAccordion === 3
+                                ? "text-font-style"
+                                : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(3)}
@@ -312,16 +332,18 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${activeAccordion === 3 ? "show" : ""
-                          }`}
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 3 ? "show" : ""
+                        }`}
                         id="collapseThree"
                         // class="accordion-collapse collapse"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${activeAccordion === 3 && "text-style"
-                            }`}
+                          className={`accordion-body ${
+                            activeAccordion === 3 && "text-style"
+                          }`}
                         >
                           We believe in constant improvement. Our Continuous
                           Iterations approach involves regular feedback loops
@@ -331,16 +353,18 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${activeAccordion === 3 && "border-style"
-                          }`}
+                        className={`accordion-header ${
+                          activeAccordion === 3 && "border-style"
+                        }`}
                         id="headingFour"
                       >
                         <button
                           className={`accordion-button 
                                 ${activeAccordion === 3 && "text-style"}
-                            ${activeAccordion === 4
-                              ? "text-font-style"
-                              : "collapsed"
+                            ${
+                              activeAccordion === 4
+                                ? "text-font-style"
+                                : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(4)}
@@ -353,15 +377,17 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${activeAccordion === 4 ? "show" : ""
-                          }`}
+                        className={`accordion-collapse collapse ${
+                          activeAccordion === 4 ? "show" : ""
+                        }`}
                         id="collapseFour"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${activeAccordion === 3 && "text-style"
-                            }`}
+                          className={`accordion-body ${
+                            activeAccordion === 3 && "text-style"
+                          }`}
                         >
                           Quality is at the core of everything we do. Our strict
                           Quality Assurance process involves comprehensive
@@ -399,7 +425,10 @@ export default function Home() {
                     <u>View all</u>
                   </p> */}
                   <div className="col-lg-4 mt-lg-0 mt-4 col-12">
-                    <button className="unique-area-button">
+                    <button
+                      className="unique-area-button"
+                      onClick={handleServiceRoute}
+                    >
                       Discover how we work
                     </button>
                   </div>
