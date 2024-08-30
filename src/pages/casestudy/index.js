@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import case1 from "../../../public/assets/media/case/case1.png";
 import case2 from "../../../public/assets/media/case/case2.png";
 import case3 from "../../../public/assets/media/case/case3.png";
@@ -5,6 +6,7 @@ import case4 from "../../../public/assets/media/case/case4.png";
 import Link from "next/link";
 
 const CaseStudy = () => {
+  const router = useRouter();
   return (
     <>
       <section className="case-back-studies">
@@ -40,7 +42,7 @@ const CaseStudy = () => {
               <div className="">
                 <Link
                   className="common-project-button"
-                  href=""
+                  href="/contact"
                   style={{ textDecoration: "none" }}
                 >
                   Start a project with us

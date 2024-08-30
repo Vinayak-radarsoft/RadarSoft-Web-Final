@@ -28,7 +28,7 @@ import staff from "../../public/assets/media/staff.png";
 
 import Link from "next/link";
 import { useState } from "react";
-import { openApplyModal } from "@/components/common/data";
+import { handleServices, openApplyModal } from "@/components/common/data";
 import Apply from "@/components/model/Apply";
 import { useRouter } from "next/router";
 
@@ -92,7 +92,12 @@ export default function Home() {
                     becomes a reality. Let us help you stand out in the digital
                     landscape with our expert services.
                   </p>
-                  <button className="banner-button">Contact us</button>
+                  <button
+                    className="banner-button"
+                    onClick={() => router.push("/contact")}
+                  >
+                    Contact us
+                  </button>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -148,9 +153,8 @@ export default function Home() {
             <div className="row">
               <div className="unique-area-label">
                 <h1
-                  className={`unique-area-heading col-lg-8 col-12 m-0 ${
-                    activeAccordion === 3 && "text-style"
-                  }`}
+                  className={`unique-area-heading col-lg-8 col-12 m-0 ${activeAccordion === 3 && "text-style"
+                    }`}
                 >
                   Discover how we work at
                   <br />
@@ -158,11 +162,10 @@ export default function Home() {
                 </h1>
                 <div className="col-lg-4 mt-lg-0 mt-4 col-12">
                   <button
-                    className={`${
-                      activeAccordion === 3 || activeAccordion === 4
-                        ? "btn-style"
-                        : "unique-area-button"
-                    }`}
+                    className={`${activeAccordion === 3 || activeAccordion === 4
+                      ? "btn-style"
+                      : "unique-area-button"
+                      }`}
                     onClick={handleServiceRoute}
                   >
                     Discover how we work
@@ -218,9 +221,8 @@ export default function Home() {
                   >
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${
-                          activeAccordion === 3 && "border-style"
-                        }`}
+                        className={`accordion-header ${activeAccordion === 3 && "border-style"
+                          }`}
                         id="headingOne"
                       >
                         <button
@@ -228,13 +230,11 @@ export default function Home() {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne"
                           aria-controls="collapseOne"
-                          className={`accordion-button ${
-                            activeAccordion === 3 && "text-style"
-                          } ${
-                            activeAccordion === 1
+                          className={`accordion-button ${activeAccordion === 3 && "text-style"
+                            } ${activeAccordion === 1
                               ? "text-font-style"
                               : "collapsed"
-                          }`}
+                            }`}
                           onClick={() => handleAccordionClick(1)}
                           aria-expanded={activeAccordion === 1}
                         >
@@ -242,18 +242,16 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 1 ? "show" : ""
-                        }`}
+                        className={`accordion-collapse collapse ${activeAccordion === 1 ? "show" : ""
+                          }`}
                         id="collapseOne"
                         // class="accordion-collapse collapse show"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${
-                            activeAccordion === 3 && "text-style"
-                          }`}
+                          className={`accordion-body ${activeAccordion === 3 && "text-style"
+                            }`}
                         >
                           Our Rapid Design phase focuses on quickly translating
                           your vision into real world designs. We create
@@ -264,18 +262,16 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${
-                          activeAccordion === 3 && "border-style"
-                        }`}
+                        className={`accordion-header ${activeAccordion === 3 && "border-style"
+                          }`}
                         id="headingTwo"
                       >
                         <button
                           className={`accordion-button 
                             ${activeAccordion === 3 && "text-style"}
-                            ${
-                              activeAccordion === 2
-                                ? "text-font-style"
-                                : "collapsed"
+                            ${activeAccordion === 2
+                              ? "text-font-style"
+                              : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(2)}
@@ -288,17 +284,15 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 2 ? "show" : ""
-                        }`}
+                        className={`accordion-collapse collapse ${activeAccordion === 2 ? "show" : ""
+                          }`}
                         id="collapseTwo"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${
-                            activeAccordion === 3 && "text-style"
-                          }`}
+                          className={`accordion-body ${activeAccordion === 3 && "text-style"
+                            }`}
                         >
                           In our Rapid Development stage, we leverage agile
                           methodologies and advanced technologies to smoothly
@@ -308,18 +302,16 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${
-                          activeAccordion === 3 && "border-style"
-                        }`}
+                        className={`accordion-header ${activeAccordion === 3 && "border-style"
+                          }`}
                         id="headingThree"
                       >
                         <button
                           className={`accordion-button 
                                 ${activeAccordion === 3 && "text-style"}
-                            ${
-                              activeAccordion === 3
-                                ? "text-font-style"
-                                : "collapsed"
+                            ${activeAccordion === 3
+                              ? "text-font-style"
+                              : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(3)}
@@ -332,18 +324,16 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 3 ? "show" : ""
-                        }`}
+                        className={`accordion-collapse collapse ${activeAccordion === 3 ? "show" : ""
+                          }`}
                         id="collapseThree"
                         // class="accordion-collapse collapse"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${
-                            activeAccordion === 3 && "text-style"
-                          }`}
+                          className={`accordion-body ${activeAccordion === 3 && "text-style"
+                            }`}
                         >
                           We believe in constant improvement. Our Continuous
                           Iterations approach involves regular feedback loops
@@ -353,18 +343,16 @@ export default function Home() {
                     </div>
                     <div className="accordion-item">
                       <h2
-                        className={`accordion-header ${
-                          activeAccordion === 3 && "border-style"
-                        }`}
+                        className={`accordion-header ${activeAccordion === 3 && "border-style"
+                          }`}
                         id="headingFour"
                       >
                         <button
                           className={`accordion-button 
                                 ${activeAccordion === 3 && "text-style"}
-                            ${
-                              activeAccordion === 4
-                                ? "text-font-style"
-                                : "collapsed"
+                            ${activeAccordion === 4
+                              ? "text-font-style"
+                              : "collapsed"
                             }`}
                           type="button"
                           onClick={() => handleAccordionClick(4)}
@@ -377,17 +365,15 @@ export default function Home() {
                         </button>
                       </h2>
                       <div
-                        className={`accordion-collapse collapse ${
-                          activeAccordion === 4 ? "show" : ""
-                        }`}
+                        className={`accordion-collapse collapse ${activeAccordion === 4 ? "show" : ""
+                          }`}
                         id="collapseFour"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                       >
                         <div
-                          className={`accordion-body ${
-                            activeAccordion === 3 && "text-style"
-                          }`}
+                          className={`accordion-body ${activeAccordion === 3 && "text-style"
+                            }`}
                         >
                           Quality is at the core of everything we do. Our strict
                           Quality Assurance process involves comprehensive
@@ -434,7 +420,11 @@ export default function Home() {
                   </div>
                 </span>
               </div>
-              <div className="col-lg-3 col-md-6 my-lg-0 my-3">
+              <div
+                className="col-lg-3 col-md-6 my-lg-0 my-3"
+                style={{ cursor: "pointer" }}
+                onClick={() => handleServices(router, 1)}
+              >
                 <div className="service-boxe-1">
                   <Image
                     className="service img-fluid"
@@ -444,13 +434,21 @@ export default function Home() {
                   <h6>Digital Transformation</h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 my-lg-0 my-3">
+              <div
+                className="col-lg-3 col-md-6 my-lg-0 my-3"
+                style={{ cursor: "pointer" }}
+                onClick={() => handleServices(router, 3)}
+              >
                 <div className="service-boxe-2">
                   <Image className="service img-fluid" src={staff} alt="ewf" />
                   <h6>Staff Augmentation</h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 my-lg-0 my-3">
+              <div
+                className="col-lg-3 col-md-6 my-lg-0 my-3"
+                style={{ cursor: "pointer" }}
+                onClick={() => handleServices(router, 2)}
+              >
                 <div className="service-boxe-3">
                   <Image
                     className="service img-fluid"
@@ -460,7 +458,11 @@ export default function Home() {
                   <h6>UI/UX Design</h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 my-lg-0 my-3">
+              <div
+                className="col-lg-3 col-md-6 my-lg-0 my-3"
+                style={{ cursor: "pointer" }}
+                onClick={() => handleServices(router, 2)}
+              >
                 <div className="service-boxe-4">
                   <Image
                     className="service img-fluid"
@@ -486,7 +488,8 @@ export default function Home() {
                     Discover our successful projects and see how we've helped
                     businesses to grow.
                   </p>
-                  <p className="work-area-upper-paragraph m-0">
+                  <p className="work-area-upper-paragraph m-0" style={{ cursor: "pointer" }}
+                    onClick={() => router.push("/casestudy")}>
                     <u> Read our all case studies</u>
                   </p>
                 </span>
@@ -516,10 +519,13 @@ export default function Home() {
                     advance in their careers.
                   </p>
                   <div className="work-area-log">
-                    <button className="work-area-lower-button">
+                    <button className="work-area-lower-button"
+                      style={{ cursor: "pointer" }}
+                      onClick={() => router.push("/casestudy")}
+                    >
                       Read full case study <i className="bi bi-arrow-right"></i>
                     </button>
-                    <Link className="work-area-lower-anchor" href="#">
+                    <Link className="work-area-lower-anchor" href="/casestudy">
                       <u> Read our all case studies</u>
                     </Link>
                   </div>
@@ -631,7 +637,8 @@ export default function Home() {
                   just build software; we craft digital experiences that propel
                   businesses forward in the digital age.
                 </p>
-                <button className="about-us-left-button">
+                <button className="about-us-left-button" style={{ cursor: "pointer" }}
+                  onClick={() => router.push("/about")}>
                   View in detail <i className="bi bi-arrow-right"></i>
                 </button>
               </div>

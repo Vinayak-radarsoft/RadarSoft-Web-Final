@@ -53,17 +53,17 @@ const Footer = () => {
                   <h4 className="widget-title title-color mb-4">Quick Links</h4>
                   <ul className="list-unstyled">
                     <li className="mb-3">
-                      <Link href="#!" className="text-decoration-none sub-title">
+                      <Link href="/" className="text-decoration-none sub-title">
                         Home
                       </Link>
                     </li>
                     <li className="mb-3">
-                      <Link href="#!" className="text-decoration-none sub-title">
+                      <Link href="/services" className="text-decoration-none sub-title">
                         IT Services
                       </Link>
                     </li>
                     <li className="mb-2">
-                      <Link href="#!" className="text-decoration-none sub-title">
+                      <Link href="/career" className="text-decoration-none sub-title">
                         Careers
                       </Link>
                     </li>
@@ -75,7 +75,7 @@ const Footer = () => {
                   <h4 className="widget-title mb-4 title-color">Company</h4>
                   <ul className="list-unstyled">
                     <li className="mb-3">
-                      <Link href="#!" className="text-decoration-none sub-title">
+                      <Link href="/about" className="text-decoration-none sub-title">
                         About us
                       </Link>
                     </li>
@@ -97,7 +97,7 @@ const Footer = () => {
                   <h4 className="widget-title mb-4 title-color">Support</h4>
                   <ul className="list-unstyled">
                     <li className="mb-3">
-                      <Link href="#!" className="text-decoration-none sub-title">
+                      <Link href="/contact" className="text-decoration-none sub-title">
                         Contact Us
                       </Link>
                     </li>
