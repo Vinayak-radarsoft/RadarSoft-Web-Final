@@ -225,7 +225,7 @@ const Services = () => {
                         <div
                             className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
                             style={{ cursor: "pointer" }}
-                            onClick={() => handleServices(router, 3)}
+                            onClick={() => handleServices(router, 2)}
                         >
                             <div className="service-card service-top">
                                 <h4>Digital &nbsp; Transformation</h4>
@@ -278,7 +278,7 @@ const Services = () => {
                         <div
                             className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4"
                             style={{ cursor: "pointer" }}
-                            onClick={() => handleServices(router, 2)}
+                            onClick={() => handleServices(router, 3)}
                         >
                             <div className="service-card service-top">
                                 <h4>Staff Augmentation</h4>
