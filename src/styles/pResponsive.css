@@ -375,7 +375,40 @@
   .case-blog {
     margin: 50px 0px 100px;
   }
+  /* staff css start */
+  .process-container {
+    flex-direction: column;
+  }
+
+  .process-arrow {
+    display: none;
+  }
+
+  .process-step {
+    margin-bottom: 20px;
+  }
+
+  .common-project-button:hover {
+    border: 2px solid #002237;
+    background-color: #ffffff;
+    color: #002237;
+  }
+
+  .nav-link:hover {
+    font-weight: 600 !important;
+  }
+
+  .our_img {
+    width: 586px;
+    height: 684px;
+  }
+
+  .our_img img {
+    width: 100%;
+    height: 100%;
+  }
 }
+/* staff css end */
 
 @media screen and (max-width: 576px) {
   .exp-right-low,

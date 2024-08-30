@@ -204,6 +204,69 @@ ul {
   align-items: center;
 }
 
+/* staff start */
+.tools {
+  border-radius: 11px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tools img {
+  margin-bottom: 10px;
+}
+
+.staff_sec_bg::before {
+  background-image: url(/_next/static/media/k.b765c4c2.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  z-index: -9;
+  left: -300px;
+  top: 60px;
+}
+
+.staff-process-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 184px;
+  height: 157px;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.staff-process-step img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.staff-process-step p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* staff end */
+
 /* CASE STUDIES */
 
 .case-back-studies {

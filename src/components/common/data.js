@@ -38,7 +38,7 @@ export const handleServices = (router, num) => {
             router.push("/services/web_development");
             break;
         case 3:
-            router.push("/services/web_development");
+            router.push("/services/staff_agumentation");
             break;
         default:
             router.push("/services/web_development");
