@@ -264,7 +264,7 @@ header {
 /*our service started */
 
 .service-area {
-  background: url(../../public/assets/media/service.png) no-repeat center right;
+  background: url(/assets/media/service.png) no-repeat center right;
   margin: 60px auto;
   display: block;
 }
@@ -490,7 +490,7 @@ img.service {
 .about-us-area {
   margin: 60px auto;
   display: flex;
-  background: url(../../public/assets/media/back.png) no-repeat right 60px;
+  background: url(/assets/media/back.png) no-repeat right 60px;
 }
 
 .about-us-left-side {

@@ -35,7 +35,7 @@
   /* Ankita */
 
   .about-us-area {
-    background: url(../../public/assets/media/back.png) no-repeat 530px 30px;
+    background: url(/assets/media/back.png) no-repeat 530px 30px;
   }
 }
 
@@ -102,7 +102,7 @@
   /* Ankita  */
 
   .about-us-area {
-    background: url(../../public/assets/media/back.png) no-repeat 440px 30px;
+    background: url(/assets/media/back.png) no-repeat 440px 30px;
   }
   .about-box {
     bottom: 20px;
@@ -203,7 +203,7 @@
     gap: 20px;
   }
   .about-us-area {
-    background: url(../../public/assets/media/back.png) no-repeat 400px bottom;
+    background: url(/assets/media/back.png) no-repeat 400px bottom;
   }
   .unique-area-label {
     flex-direction: column;
@@ -240,7 +240,7 @@
     display: block;
   }
   .about-us-area {
-    background: url(../../public/assets/media/back.png) no-repeat 400px 400px;
+    background: url(/assets/media/back.png) no-repeat 400px 400px;
   }
   .stats-area-paragraph {
     padding: 0;

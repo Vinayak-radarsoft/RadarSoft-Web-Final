@@ -31,7 +31,7 @@
     line-height: 35px;
   }
   .service-banner {
-    background-image: url(../../public/assets/media/service/section-head.png);
+    background-image: url(/assets/media/service/section-head.png);
   }
 
   .case-studies-flex {
@@ -237,7 +237,7 @@
     display: block;
   }
   .about-us-area {
-    background: url(../../public/assets/media/back.png) no-repeat 400px 400px;
+    background: url(/assets/media/back.png) no-repeat 400px 400px;
   }
   .stats-area-paragraph {
     padding: 0;
