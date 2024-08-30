@@ -72,7 +72,7 @@ const CaseStudy = () => {
                     Turn your dreams into reality with AcadSpace - Google Maps
                     for your career journey.
                   </h4>
-                  <Link className="case-read-more" href="/case_Study/1">
+                  <Link className="case-read-more" href="/casestudy/1">
                     Read more&nbsp;
                     <span>
                       <i className="fa-solid fa-arrow-right-long"></i>
@@ -99,7 +99,7 @@ const CaseStudy = () => {
                     Personalized makeup and Hairstyle services, beautician
                     services at of home - MakeupCentral
                   </h4>
-                  <Link className="case-read-more" href="/case_Study/2">
+                  <Link className="case-read-more" href="/casestudy/2">
                     Read more&nbsp;
                     <span>
                       <i className="fa-solid fa-arrow-right-long"></i>
@@ -126,7 +126,7 @@ const CaseStudy = () => {
                     Hub for students & professionals to learn new skills -
                     Abhyan
                   </h4>
-                  <Link className="case-read-more" href="/case_Study/3">
+                  <Link className="case-read-more" href="/casestudy/3">
                     Read more&nbsp;
                     <span>
                       <i className="fa-solid fa-arrow-right-long"></i>
@@ -152,7 +152,7 @@ const CaseStudy = () => {
                   <h4>
                     Fashion store for kids to keep with new fashion - TOTDOT
                   </h4>
-                  <Link className="case-read-more" href="/case_Study/4">
+                  <Link className="case-read-more" href="/casestudy/4">
                     Read more&nbsp;
                     <span>
                       <i className="fa-solid fa-arrow-right-long"></i>

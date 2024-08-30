@@ -16,6 +16,11 @@
   color: #000;
 }
 
+.job-body h5 {
+  border-bottom: 1px solid #dee2e6;
+  line-height: 50px;
+}
+
 .co-button {
   background: rgba(0, 34, 55, 1);
   border: none;

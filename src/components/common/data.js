@@ -13,6 +13,21 @@ export const closeApplyModal = () => {
     }
 };
 
+export const openJobModal = () => {
+    const modal = new bootstrap.Modal(document.getElementById("jobModel"));
+    modal.show();
+};
+
+export const closeJobModal = () => {
+    const modal = document.getElementById("jobModel");
+    if (modal) {
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        if (modalInstance) {
+            modalInstance.hide();
+        }
+    }
+};
+
 //service redirecct code here.
 export const handleServices = (router, num) => {
     switch (num) {
