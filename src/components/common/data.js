@@ -1,0 +1,32 @@
+export const openApplyModal = () => {
+    const modal = new bootstrap.Modal(document.getElementById("ApplyModal"));
+    modal.show();
+};
+
+export const closeApplyModal = () => {
+    const modal = document.getElementById("ApplyModal");
+    if (modal) {
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        if (modalInstance) {
+            modalInstance.hide();
+        }
+    }
+};
+
+//service redirecct code here.
+export const handleServices = (router, num) => {
+    switch (num) {
+        case 1:
+            router.push("/services/digital_transformation");
+            break;
+        case 2:
+            router.push("/services/web_development");
+            break;
+        case 3:
+            router.push("/services/web_development");
+            break;
+        default:
+            router.push("/services/web_development");
+            break;
+    }
+};
